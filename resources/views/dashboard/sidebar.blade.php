@@ -1,6 +1,6 @@
-<div class="flex flex-col h-screen bg-gray-900 text-gray-100 w-64 py-4 px-2">
+<div class="fixed inset-y-0 left-0 flex flex-col h-screen bg-gray-900 text-gray-100 w-64">
     <!-- Logo -->
-    <div class="px-4 mb-6">
+    <div class="px-6 py-4">
         <h1 class="text-xl font-bold flex items-center">
             <span class="text-red-500">Bitz</span>
             <span>Mag</span>
@@ -8,9 +8,9 @@
     </div>
 
     <!-- Navigation Links -->
-    <nav class="flex-1 space-y-2">
+    <nav class="flex-1 py-4 overflow-y-auto">
         <a href="{{ route('dashboard') }}"
-            class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+            class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -19,9 +19,8 @@
             Dashboard
         </a>
 
-
         <a href="{{ route('dashboard.source') }}"
-            class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+            class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l-5 5 5 5m4-10l5 5-5 5" />
@@ -29,8 +28,7 @@
             Source
         </a>
 
-
-        <a href="#" class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+        <a href="#" class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -38,7 +36,7 @@
             Connections
         </a>
 
-        <a href="#" class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+        <a href="#" class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -66,46 +64,52 @@
             </svg>
             Billing
         </a>
-    </nav>
 
-    <!-- Welcome Card -->
-    <div class="mx-4 my-4 p-4 bg-gray-800 rounded-lg">
-        <h3 class="font-medium">Welcome</h3>
-        <p class="text-sm text-gray-400 mt-1">Get to know your BitzMag Dashboard with our short walkthrough tour.</p>
-        <button class="mt-3 text-sm text-blue-400 hover:text-blue-300">Start Tour</button>
-    </div>
+        <!-- Welcome Card -->
+        <div class="mx-4 my-4 p-4 bg-gray-800 rounded-lg">
+            <h3 class="font-medium text-sm">Welcome</h3>
+            <p class="text-sm text-gray-400 mt-1">Get to know your BitzMag Dashboard with our short walkthrough tour.
+            </p>
+            <button class="mt-3 text-sm text-blue-400 hover:text-blue-300">Start Tour</button>
+        </div>
 
-    <!-- Bottom Links -->
-    <div class="mt-auto space-y-2">
-        <a href="#" class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-            </svg>
-            Support
-        </a>
+        <!-- Bottom Links -->
+        <div class="mt-auto">
+            <a href="#" class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M18.364 5.636l-3.536 3.536m0 0l5.656 5.656M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                Support
+            </a>
 
-        <a href="#" class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            Settings
-        </a>
+            <a href="#" class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Settings
+            </a>
+        </div>
 
         <!-- User Profile -->
-        <div class="border-t border-gray-800 mt-2 pt-2 mx-4">
-            <div class="flex items-center px-2 py-3">
-                <div class="h-8 w-8 rounded-full bg-gray-500"></div>
+        <div class="px-6 py-4 mt-4">
+            <div class="flex items-center">
+                <div class="h-8 w-8 rounded-full bg-gray-700"></div>
                 <div class="ml-3">
                     <p class="text-sm font-medium">johnmarvel</p>
                     <p class="text-xs text-gray-500">johnmarvel@gmail.com</p>
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
+</div>
+
+<!-- Main Content Container -->
+<div class="ml-64">
+    @yield('content')
 </div>
