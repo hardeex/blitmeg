@@ -15,7 +15,7 @@
         @include('partials.person')
 
         <!-- Right side login form section -->
-        <div class="w-full lg:w-1/2 bg-white px-4">
+        <div class="w-full lg:w-1/2 bg-white px-4 h-100 overflow-y-auto">
             <div class="w-full max-w-md mx-auto py-12">
                 <h2 class="text-2xl font-semibold text-gray-900 mb-2">Log In</h2>
                 <p class="text-gray-600 mb-8">Enter your credentials to access your account</p>
@@ -156,6 +156,7 @@
                     </a>
                 </p>
             </div>
+
         </div>
         <script>
             function togglePassword() {
