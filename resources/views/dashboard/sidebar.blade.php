@@ -28,7 +28,8 @@
             Source
         </a>
 
-        <a href="#" class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
+        <a href="{{ route('dashboard.connection') }}"
+            class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -36,7 +37,8 @@
             Connections
         </a>
 
-        <a href="#" class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
+        <a href="{{ route('dashboard.performance') }}"
+            class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -46,7 +48,8 @@
             <span class="ml-auto bg-gray-800 text-xs px-2 py-1 rounded-full">10</span>
         </a>
 
-        <a href="#" class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+        <a href="{{ route('dashboard.user') }}"
+            class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -75,7 +78,8 @@
 
         <!-- Bottom Links -->
         <div class="mt-auto">
-            <a href="#" class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
+            <a href="{{ route('dashboard.support') }}"
+                class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -84,7 +88,8 @@
                 Support
             </a>
 
-            <a href="#" class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
+            <a href="{{ route('dashboard.settings') }}"
+                class="flex items-center px-6 py-2 text-sm hover:bg-gray-800 transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -98,13 +103,19 @@
 
         <!-- User Profile -->
         <div class="px-6 py-4 mt-4">
-            <div class="flex items-center">
-                <div class="h-8 w-8 rounded-full bg-gray-700"></div>
-                <div class="ml-3">
-                    <p class="text-sm font-medium">johnmarvel</p>
-                    <p class="text-xs text-gray-500">johnmarvel@gmail.com</p>
+            <a href="{{ route('dashboard.profile') }}">
+                <div class="flex items-center">
+                    <div>
+                        <img src="{{ asset('/images/adewale.png') }}" alt="Profile photo"
+                            class="h-8 w-8 rounded-full bg-gray-700">
+                    </div>
+
+                    <div class="ml-3">
+                        <p class="text-sm font-medium">johnmarvel</p>
+                        <p class="text-xs text-gray-500">johnmarvel@gmail.com</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </nav>
 </div>

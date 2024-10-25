@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title') </title>
-    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+    <title>@yield('title') </title>   
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <!--- for chart-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <style>
         @keyframes fadeIn {
             from {

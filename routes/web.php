@@ -21,17 +21,15 @@ Route::middleware('auth')->group(function () {
     // dashboard auth routes
     Route::get('/source', [UserController::class, 'source'])->name('dashboard.source');
     Route::get('/billing', [UserController::class, 'billing'])->name('dashboard.billing');
+    Route::get('/connection', [UserController::class, 'connection'])->name('dashboard.connection');
+    Route::get('performance', [UserController::class, 'performance'])->name('dashboard.performance');
+    Route::get('/user', [UserController::class, 'user'])->name('dashboard.user');
+    Route::get('/profile', [UserController::class, 'profile'])->name('dashboard.profile');
+    Route::get('/support', [UserController::class,'support'])->name('dashboard.support');
+    Route::get('/settings', [UserController::class,'settings'])->name('dashboard.settings');
 });
 
 require __DIR__ . '/auth.php';
 
 
 
-Route::get('sidebar', function () {
-    return view('dashboard.sidebar');
-});
-
-
-Route::get('header', function () {
-    return view('dashboard.header');
-});

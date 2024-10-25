@@ -15,18 +15,13 @@
         @include('partials.person')
 
         <!-- Right side login form section -->
-        <div class="w-full lg:w-1/2 min-h-screen overflow-y-auto bg-white px-4">
+        <div class="w-full lg:w-1/2 bg-white px-4">
             <div class="w-full max-w-md mx-auto py-12">
                 <h2 class="text-2xl font-semibold text-gray-900 mb-2">Log In</h2>
                 <p class="text-gray-600 mb-8">Enter your credentials to access your account</p>
 
-                        <!-- Right side login form section -->
-        <div class="w-full lg:w-1/2 min-h-screen overflow-y-auto bg-white px-4">
-            <div class="w-full max-w-md mx-auto py-12">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Sign Up</h2>
-                <p class="text-gray-600 mb-8">Enter your credentials to access your account</p>
                 <!--- server feedback to the user -->
-                <div class="space-y-4 max-w-2xl mx-auto p-4">
+                <div class="space-y-4 mb-6">
                     @if ($errors->any())
                         <div class="bg-red-50 border-l-4 border-red-500 rounded-lg p-4 shadow-sm">
                             <div class="flex items-center mb-2">
@@ -58,7 +53,6 @@
                         </div>
                     @endif
                 </div>
-                <!--- end of server feedback -->
 
                 <form method="POST" action="{{ route('login') }}" class="space-y-6">
                     @csrf
@@ -163,14 +157,12 @@
                 </p>
             </div>
         </div>
-    </div>
-
-    <script>
-        function togglePassword() {
-            const passwordInput = document.getElementById('password');
-            passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
-        }
-    </script>
+        <script>
+            function togglePassword() {
+                const passwordInput = document.getElementById('password');
+                passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+            }
+        </script>
 </body>
 
 </html>
