@@ -9,7 +9,8 @@
 
     <!-- Navigation Links -->
     <nav class="flex-1 space-y-2">
-        <a href="#" class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+        <a href="{{ route('dashboard') }}"
+            class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -17,6 +18,17 @@
             </svg>
             Dashboard
         </a>
+
+
+        <a href="{{ route('dashboard.source') }}"
+            class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l-5 5 5 5m4-10l5 5-5 5" />
+            </svg>
+            Source
+        </a>
+
 
         <a href="#" class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
@@ -45,7 +57,8 @@
             Users
         </a>
 
-        <a href="#" class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+        <a href="{{ route('dashboard.billing') }}"
+            class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
