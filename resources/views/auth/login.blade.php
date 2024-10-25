@@ -132,12 +132,12 @@
 
                 <!-- Social Login Buttons -->
                 <div class="mt-6 space-y-4">
-                    <button type="button"
+                    <a href="{{ url('auth/google') }}" type="button"
                         class="w-full flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
                         <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google logo"
                             class="h-5 w-5 mr-2" />
                         Continue with Google
-                    </button>
+                    </a>
                     <button type="button"
                         class="w-full flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
                         <svg class="h-5 w-5 mr-2 text-[#1DA1F2]" fill="currentColor" viewBox="0 0 24 24">
